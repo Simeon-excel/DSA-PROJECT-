@@ -1,0 +1,51 @@
+#DSA PROJECT 
+##CASE STUDY - Amazon Product Review Analysis
+### STEP BELOW:
+Excel Dataset was Cleaned
+Converted actual_price and rating to numbers
+Filling missing rating_count
+Added: discount_percent_calc
+potential_revenue
+price_bucket (<₹200, ₹200–₹500, >₹500)
+2. Summary of Case Study Insights (Use in Excel Pivot Tables)
+Here’s how I tackle each question inside Excel:
+1. Average discount % by category
+Pivot Table: Rows: category
+Values: Average of discount_percent_calc
+2. Product count per category
+Pivot Table: Rows: category
+Values: Count of product_name
+3. Total reviews per category
+Values: Sum of rating_count
+4. Highest rated products
+Sort the main table by rating descending
+5. Avg. actual vs discounted price by category
+Values: Average of actual_price and discounted_price
+6. Most reviewed products
+Sort by rating_count descending
+7. Products with ≥50% discount
+Filter: discount_percent_calc ≥ 0.50
+8. Rating distribution
+Pivot Table: Rows: rating
+Values: Count of product_name
+9. Total potential revenue per category
+Values: Sum of potential_revenue
+10. Product count per price bucket
+Rows: price_bucket
+Values: Count of unique product_name
+11. Rating vs Discount
+Use Excel chart: Scatter plot
+X-axis: discount_percent_calc
+Y-axis: rating
+Optional: Use =CORREL(rating_range, discount_range)
+12. Products with <1,000 reviews
+Filter: rating_count < 1000
+13. Categories with highest discounts
+Sort Pivot Table from #1 by discount % descending
+14. Top 5 products by rating and reviews
+Created column in Excel:
+excel Copy Edit
+=rating * 100 + rating_count
+Then sort by this column descending
+
+
